@@ -1,0 +1,13 @@
+<html>
+<head></head>
+<body>
+  <h1>Project I: Word Count</h1>
+  <form action="{% url 'count' %}" method="GET">
+    <textarea cols="40" rows="5" name="fullText"></textarea>
+    <br />
+    <input type="submit" value="Count" />
+    <a href="{% url 'about' %}">About</a>
+  </form>
+
+</body>
+</html>

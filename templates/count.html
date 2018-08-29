@@ -1,0 +1,12 @@
+<html>
+<head></head>
+<body>
+  <h1>Project I: Word Count</h1>
+  <h3>There's a {{word_length}} words as below:</h3> <br>
+  <a href="{% url 'home' %}">Start Again!</a><br>
+  {{ result }}
+  {% for word,value in result %}
+  {{ word }} : {{ value }} <br />
+  {% endfor %}
+</body>
+</html>
